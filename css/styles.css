@@ -310,6 +310,14 @@ table tr:nth-of-type(odd):hover {
 }
 
 @media screen and (max-width: 768px) {
+
+.carousel-caption h5 {
+	font-size: 0.5rem;
+	color: pink;
+
+}
+
+	
 	table, thead, tbody, th, td, tr, caption {
 		display: block;
 	}
