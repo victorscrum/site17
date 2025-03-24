@@ -312,7 +312,7 @@ table tr:nth-of-type(odd):hover {
 @media screen and (max-width: 768px) {
 
 .carousel-caption h5 {
-	
+	display:none;
 
 }
 
