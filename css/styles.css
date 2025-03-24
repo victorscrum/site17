@@ -1,0 +1,363 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+		font-size: 20px;                        /*Specifies font size*/
+		scroll-behavior: smooth;
+}
+
+
+body {
+		font-family: "Open Sans", sans-serif;
+		width: 80%;                             /*Specifies the width on the page, how width the page is*/
+		margin: 50px auto;                      /*Specifies the margin, divides the pixels of empty space evenly on both sides*/		
+		background: rgb(245,245,245);           /*Specifies the blackground colour*/
+		color: #000;                            /*Specifies the text colour*/
+		line-height: 1.5;                       /*Specifies the distance between lines*/
+}
+
+/*Navbar Styles*/
+nav.navbar {
+	padding: 20px;                              /*Create space inside the navbar*/
+	background-color: #82341e !important;       /*set the background colour in the navbar !important gives the priopiry for this line*/
+	}
+
+nav.navbar .navbar-nav {                        /*The Box continuos the links for the other pages on the site*/
+	padding-top: 5px;
+	padding-left: 20px;
+	}
+
+nav.navbar .navbar-nav a.nav-link {             /*Specify the targeted link*/
+	padding: 8px 20px;                         /*Set the space near and around the link*/
+	color: #fff;                                /*Set the color for the link*/
+	text-align: left;
+	font-size: 1rem;                            /*Set the font-size for the link*/
+	}
+
+nav.navbar .navbar-nav a.nav-link:hover{        /*Change the color when hover the mouse over the link*/
+	color: #e9bd43;
+	}
+
+nav.navbar .navbar-nav .active a.nav-link {     /*Set the style for the current active pages*/
+	font-weight: bold;
+	color: #e9bd43;
+	background: transparent;
+	border-bottom: 4px solid#FFB800;
+}
+
+nav.navbar a.navbar-brand {                    /*Change the color of the Logo, navbar icon*/
+	color: white;
+}
+
+/*Baseline text slyle*/
+h1 {
+	font-size: 2.5rem;
+}
+h2 {
+	font-size: 1.5rem;
+}
+h3 {
+	font-size: 1.25rem;
+	font-variant: normal;
+}
+
+p {
+	font-size: 1rem;
+	margin: 0 0 1rem 0;
+	
+	
+}
+
+section p {
+	text-align: justify;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.cColour {
+	color: #FF3500;
+}
+
+/*Link Styles*/
+
+a:link, a:active, a:visited{
+	color: #0088cc;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+
+#carouselExampleIndicators1 img {
+	width: 100%;
+	height: auto;
+}
+
+/*Footer Styles */
+footer {
+	width: 100%;
+}
+
+footer h2 {}
+
+.footerL {
+	float: left;
+	padding: 0;
+	border-right: 1px solid #999;
+}
+
+.footerR {
+	float: right;
+	text-align: right;
+	padding: 0;
+}
+
+.footerR p.linked {
+	background: url("../images/linkedin.png") no-repeat right;
+	padding-right: 30px;
+}
+
+
+/*Video Styles*/
+
+video {
+	width: 100%;
+	height: auto;
+	margin-bottom: 1rem;
+}
+
+/*Images Styles*/
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+/*Post Comment Form Styles*/
+
+#frmComment {
+	width: 90%;
+	margin: 30px auto;
+	font-size: 0.9rem;
+}
+
+#frmComment label {
+	float: left;
+	width: 100%;
+	display: block;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+#frmComment label span{
+	float: left;
+	width: 30%;
+	text-align: right;
+	margin-top: 10px;
+	padding-top: 20px;
+	}
+
+#frmComment input {
+	float: left;
+	width: 50%;
+	border: 1px solid #999;
+	box-shadow: 0px 5px 5px #e3e3e3;
+	margin: 10px 0 0 20px;
+	padding: 20px 10px;
+	height: 18px;
+	}
+
+#frmComment input:hover,#frmComment textarea:hover{
+	box-shadow: 5px 5px 8px #c1c1c1;
+}
+
+#frmComment textarea{
+	float: left;
+	width: 50%;
+	margin: 8px 0 0 20px;
+	border: solid 1px #999;
+	box-shadow: 2px 8px 8px #e3e3e3;
+	padding: 10px 0 0 5px;
+}
+
+select{
+	width: 50%;
+	padding: 12px 10px 10px 10px;
+	margin: 18px 0 0 20px;
+	border: 1px solid #999;
+	color: #999;
+	font-size: 16px;
+}
+
+#frmComment input[type=submit]{
+	padding: 12px 2px;
+	text-align: center;
+	width: 140px;
+	float: left;
+	color: #FFF;
+	background: #0088CC;
+	border: 1px solid #0088CC;
+	margin: 0px 0 0 32%;
+	border-radius: 7px;
+	cursor: pointer;
+	height: 45px;
+}
+
+#frmComment input[typr=submit]:hover {
+	background: #18B1FB;
+	}
+
+
+/*Table styles*/
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	margin: 10px auto;
+	}
+
+th {
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 10px 8px;
+	border-bottom: 2px solid #000;
+	text-align: center;
+	background: rgb(170,180,187);
+}
+
+td {
+	font-size: 0.9rem;
+	border-bottom: 1px solid #CCC;
+	padding: 12px 6px;
+	text-align: center;
+	}
+
+table tr:nth-of-type(even) {
+	background-color: rgb(225,225,225);
+}
+
+table tr:nth-of-type(even):hover {
+	background-color: rgb(170,57,57);
+	cursor: pointer;
+}
+
+table tr:nth-of-type(odd) {
+	background-color: rgb(245,245,225);
+}
+
+table tr:nth-of-type(odd):hover {
+	background-color: rgb(215,215,215);
+	cursor: pointer;
+}
+@media screen and (max-width: 992px){
+	
+	.footerL {
+		border-right: none;
+		border-bottom: 1px solid #999;
+		padding-left: 1rem;
+	}
+	
+	.footerR {
+		text-align: left;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		padding-left: 1rem;
+	}
+	
+	.footerR p.linked {
+		background: url("../images/linkedin.png") no-repeat 70px 0;
+		padding-right: 30px;
+	}
+	
+	form.form-inline {
+		width:100%;
+	}
+	
+	form.form-inine input[type=search]{
+		width: 90%;
+	}
+	
+	form.form-inline button[type=submit]{
+		display: none;
+		width: 0;
+	}
+	
+	nav.navbar.navbar-nav {
+		padding-left: 0;
+	}
+	
+	nav.navbar.navbar-nav a.nav-link {
+		padding: 8px 20px 8px 0;
+		width: 50%;
+	}
+	
+	h2 {
+		font-size: 1.1rem;
+	}
+	
+	p {
+		font-size: 0.85rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	table, thead, tbody, th, td, tr, caption {
+		display: block;
+	}
+
+	thead tr {
+		display: none;
+	}
+
+	table tr:nth-of-type(even) {
+		background-color: rgba(102, 51, 121, .25);
+		
+	}
+	
+	table td {
+		border: none;
+		position: relative;
+		text-align: center;
+		font-size: 0.9rem;
+		border-bottom: 2px solid white;
+	}
+
+	td:before {
+		position: absolute;
+		top: 12px;
+		left: 10px;
+		width: 25%;
+		font-weight: bold;
+		white-space: nowrap;
+		text-align: left;
+		font-size: 0.9rem;
+	}
+
+	td:nth-of-type(4) {
+		border-bottom: 4px solid white;
+	}
+
+/*Label the data*/
+	td:nth-of-type(1):before {
+		content: "Scrum";
+	}
+	td:nth-of-type(2):before {
+		content: "Waterfall";
+	}
+	td:nth-of-type(3):before {
+		content: "Kanban";
+	}
+	td:nth-of-type(4):before {
+		content: "Prince2";
+	}
+
+}
