@@ -121,7 +121,35 @@
 			  </footer>
 		  </div>
 	  </div>
-				   
+	<script>
+    document.getElementById('commentForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Get form values
+        const firstName = document.getElementById('userFirstName').value;
+        const lastName = document.getElementById('userLastName').value;
+        const email = document.getElementById('userEmail').value;
+        const topic = document.getElementById('userTopic').value;
+        const comment = document.getElementById('userComment').value;
+
+        // Generate comment HTML
+        const commentHTML = `
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title">${firstName} ${lastName} (${email})</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Topic: ${topic}</h6>
+                    <p class="card-text">${comment}</p>
+                </div>
+            </div>
+        `;
+
+        // Add comment to the comments section
+        document.getElementById('commentsSection').insertAdjacentHTML('beforeend', commentHTML);
+
+        // Reset the form
+        this.reset();
+    });
+</script>			   
 	  
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 	<script src="js/jquery-3.4.1.min.js"></script>
