@@ -130,13 +130,14 @@
         const lastName = document.getElementById('userLastName').value;
         const email = document.getElementById('userEmail').value;
         const topic = document.getElementById('userTopic').value;
+	const display = document.getElementById('userDisplay').value;
         const comment = document.getElementById('userComment').value;
 
         // Generate comment HTML
         const commentHTML = `
             <div class="card mt-3">
                 <div class="card-body">
-                    <h5 class="card-title">${firstName} ${lastName} (${email})</h5>
+                    <h5 class="card-title">${firstName} ${lastName} (${email}) (${userDisplay})</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Topic: ${topic}</h6>
                     <p class="card-text">${comment}</p>
                 </div>
